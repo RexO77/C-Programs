@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>//Danglind pointer Demo using the concept of DMA 
 using namespace std;
 int main(){
     int *ptr = new int;
