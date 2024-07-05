@@ -20,4 +20,4 @@ int main(){
     s1.printdata();
     s2.printdata();
     return 0;
-}
+}//constructors type 1.Parametarized 2.Default
