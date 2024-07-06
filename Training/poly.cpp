@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+//runtime polymorphism Demo 
 class Mom{
     public:
     void cook(){
