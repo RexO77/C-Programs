@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>//pointer swap
 using namespace std;
 void swap(int &a, int &b){
     int temp=a;
