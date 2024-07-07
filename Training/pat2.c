@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// Pattern -2
 int main() {
     int i, j, n = 6;
     printf("\n Pattern -1 \n");
