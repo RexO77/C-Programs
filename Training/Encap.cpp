@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//Encaptulation Demo
+//Encaptulation Demo and abstraction
 class Student{
     private:
     int marks;
