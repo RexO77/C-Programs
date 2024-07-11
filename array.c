@@ -9,7 +9,7 @@ void create()
     printf("Enter Array elements :  ");
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);//Array Operations
+        scanf("%d",&a[i]);//Array Operations Palcement 1st question
     }
 }
 
