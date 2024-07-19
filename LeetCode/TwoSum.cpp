@@ -1,8 +1,8 @@
 //Leetcode 2sum problem
 //Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 #include <iostream>
-#include <vector>
-#include <unordered_map>
+#include <vector> //for vector
+#include <unordered_map> //for unordered_map
 using namespace std;
 int twosum(vector<int>& nums, int target) {
     unordered_map<int, int> map;
