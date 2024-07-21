@@ -11,8 +11,8 @@ void bubbleSort(int arr[], int n) {
 }
 int main() {
     int arr[] = {5, 4, 3, 2, 1};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    bubbleSort(arr, n);
+    int n = sizeof(arr)/sizeof(arr[0]); //5
+    bubbleSort(arr, n);     //1 2 3 4 5
     for(int i=0; i<n; i++) {
         cout<<arr[i]<<" ";
     }
