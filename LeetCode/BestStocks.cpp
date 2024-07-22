@@ -11,3 +11,9 @@ int maxProfit(int prices[], int n) {
     }
     return profit;
 }
+int main() {
+    int prices[] = {7, 1, 5, 3, 6, 4};
+    int n = sizeof(prices)/sizeof(prices[0]); //6
+    cout<<maxProfit(prices, n); //7
+    return 0;
+}// Time Complexity: O(n) space Complexity: O(1)
