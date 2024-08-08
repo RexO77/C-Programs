@@ -13,4 +13,4 @@ int main() {
     int n = sizeof(arr)/sizeof(arr[0]); //5
     cout<<sumOfArr(arr, n); //15
     return 0;
-}// Time Complexity: O(n) space Complexity: O(1) //where n is the size of the array
+}// Time Complexity: O(n) space Complexity: O(1) 
