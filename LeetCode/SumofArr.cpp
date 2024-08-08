@@ -14,3 +14,4 @@ int main() {
     cout<<sumOfArr(arr, n); //15
     return 0;
 }// Time Complexity: O(n) space Complexity: O(1) 
+//practice 
