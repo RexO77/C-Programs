@@ -1,5 +1,5 @@
 //Leetcode 2sum problem
-//Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+//Given an array of integers, return indices of the two numbers such that they add up to a specific target. repo
 #include <iostream>
 #include <vector> //for vector
 #include <unordered_map> //for unordered_map
