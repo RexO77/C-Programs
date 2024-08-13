@@ -23,4 +23,4 @@ int main() {
         cout << result[i] << " ";
     }
     return 0;
-}
+}//practice
