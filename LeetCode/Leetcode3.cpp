@@ -17,4 +17,3 @@ int main() {
     cout<<maxProfit(prices, n); //7
     return 0;
 }
-//hello 123
