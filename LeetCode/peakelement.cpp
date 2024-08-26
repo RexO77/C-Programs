@@ -30,4 +30,3 @@ int main()
     cout << "Index of a peak point is " << findPeak(arr, n);
     return 0;
 }
-//Menu 
