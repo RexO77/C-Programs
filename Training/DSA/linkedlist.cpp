@@ -55,7 +55,7 @@ class LinkedList{
             temp=temp->next;
         }
         cout<<"NULL"<<endl;
-    }
+    }//nithya
 };
 int main(){
     LinkedList ll;
