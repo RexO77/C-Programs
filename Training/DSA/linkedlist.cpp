@@ -10,10 +10,14 @@ class Node {
         this->next = nullptr;
     }
 };
-void insertAtHead(int data, Node** head){
+void insertAtHead(int data, Node* &head){
     Node* n = new Node(data);
-    n->next = *head;
-    *head= n;
+    n->next = head;
+    head = n;
+}
+
+void display(){
+
 }
 
 int main(){
