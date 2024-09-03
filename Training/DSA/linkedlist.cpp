@@ -6,18 +6,17 @@ class Node{
     int data;
     Node* next;
 
-Node(int data){
-    this->data=data;
-    this->next=NULL;
-}
+    Node(int data){
+        this->data=data;
+        this->next=NULL;
+    }
 };
 
 //Type 3: Using class
 
 class LinkedList{
-    Node* head;
-
     public:
+    Node* head;
     LinkedList(){
         this->head=NULL;
     }
