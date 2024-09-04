@@ -47,6 +47,14 @@ class LinkedList{
         temp->next=n;
 
     }
+    void deleteAtHead(){
+        Node* todel = head;
+        head = head->next;
+        delete todel;
+    }
+    void deleteByVal(int val){
+        Node 
+    }
     void display(){
         Node* temp=head;    //No need to allocate memory to temp
         while(temp!=NULL)
@@ -55,7 +63,7 @@ class LinkedList{
             temp=temp->next;
         }
         cout<<"NULL"<<endl;
-    }//nithya
+    }
 };
 int main(){
     LinkedList ll;
@@ -63,6 +71,7 @@ int main(){
     ll.insertAtHead(20);
     ll.insertAtTail(30);
     ll.insertAtPos(2,50);
+    ll.deleteAtPos(3)
     ll.display();
 
     return 0;
