@@ -1,14 +1,13 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int n;
-    cout<<"Enter N value : "<<endl;
-    cin>>n;
-    for(int i=0  ; i < n; i = i+1){
-        cout<<" * ";
-        for(int j = i; j<=n ; j= j+1){
+void p1(int n){
+    for(int i=0 ;i<n;i++){
+        for(int j =0; j<n;j++){
             cout<<" * ";
-        }cout<<""<<endl;
+        }cout<<endl;
     }
+}
+int main(){
+    p1(7);
     return 0;
 }
