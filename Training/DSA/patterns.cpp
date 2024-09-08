@@ -21,7 +21,14 @@ void p3(int n){
         }cout<<endl;
     }
 }
+void p4(int n){
+    for(int i= 0 ;i<=n ;i++){
+        for(int j=i+1 ; j<=n ; j++){
+            cout<<"*";
+        }cout<<endl;
+    }
+}
 int main(){
-    p3(5);
+    p4(5);
     return 0;
 }
