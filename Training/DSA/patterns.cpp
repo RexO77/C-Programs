@@ -35,7 +35,21 @@ void p5(int n){
         }cout<<endl;
     }
 }
+void p6(int n){
+    for(int i=0 ;i<=n ;i++){
+        for(int j= i+1 ; j<=n ; j++){
+            cout<<" "<<j;
+        }cout<<endl;
+    }
+}
+void p7(int n){
+    for(int i= 0 ;i<=n ;i++){
+        for(int j=n-i+1 ; j<=n ; j++){
+            cout<<"*";
+        }cout<<endl;
+    }
+}
 int main(){
-    p5(5);
+    p6(5);
     return 0;
 }
