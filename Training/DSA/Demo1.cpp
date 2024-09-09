@@ -7,7 +7,7 @@ struct Activity {
     int start, finish;
 };
 
-// Function to compare activities based on their finish time
+
 bool compareActivities(const Activity& a, const Activity& b) {
     return a.finish < b.finish;
 }
