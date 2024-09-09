@@ -130,6 +130,9 @@ void p11(int n){//left Arrow without combining 2 triangle
         }cout<<endl;
     }
 }
+void p12(int n){
+    
+}
 int main(){
     p11(5);
     return 0;
