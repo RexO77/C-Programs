@@ -41,6 +41,5 @@ int main() {
 
     int maxActivities = findMaxActivities(activities);
     std::cout << "Maximum number of activities: " << maxActivities << std::endl;
-
     return 0;
 }
