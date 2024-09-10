@@ -28,7 +28,6 @@ int findMaxActivities(const std::vector<Activity>& activities) {
             lastFinishTime = sortedActivities[i].finish;
         }
     }
-
     return maxActivities;
 }
 
