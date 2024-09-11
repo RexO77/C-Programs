@@ -1,9 +1,35 @@
 #include<iostream>
 #include<stack>
+#include <vector>
 using namespace std;
 
 int main(){
     stack <char> st; // Standard template library
+    vector <int> v; 
+    //all vector operations
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    cout<<"Vector elements are: ";
+    for(int i = 0;i<v.size();i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+    v.pop_back();
+    cout<<"Vector elements after pop_back are: ";
+    for(int i = 0;i<v.size();i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+    cout<<"Top element of the vector is: "<<v.back()<<endl;
+    cout<<"Is the vector empty? "<<v.empty()<<endl;
+    cout<<"Size of the vector is: "<<v.size()<<endl;
+    cout<<"Capacity of the vector is: "<<v.capacity()<<endl;
+    v.clear();
+    cout<<"Is the vector empty? "<<v.empty()<<endl;
+    cout<<"Size of the vector is: "<<v.size()<<endl;
+    cout<<"Capacity of the vector is: "<<v.capacity()<<endl;
     string str = "Hello";
     cout<<"Original String "<<str<<endl;
     // Push all characters of the string onto the stack
