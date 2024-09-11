@@ -3,10 +3,12 @@
 #include <vector>
 #include <set>
 #include <string>
+#include <unordered_set>
+#include <map>
 using namespace std;
 
 // Function to demonstrate vector operations
-void vectorOperations() {
+void vectorOperations() { //stores elements in contiguous memory locations
     cout << "=== Vector Operations ===" << endl;
 
     vector<int> v({1, 2, 3, 4, 5}); // Initializing vector using initializer list
@@ -49,7 +51,7 @@ void vectorOperations() {
 }
 
 // Function to reverse a string using a stack
-void reverseStringUsingStack(const string& str) {
+void reverseStringUsingStack(const string& str) { //stores elements in LIFO order
     cout << "=== Reverse String Using Stack ===" << endl;
 
     stack<char> st;
@@ -73,7 +75,7 @@ void reverseStringUsingStack(const string& str) {
 }
 
 // Function to demonstrate set operations
-void setOperations() {
+void setOperations() { //stores elements in sorted order
     cout << "=== Set Operations ===" << endl;
 
     set<int> s({1,2,3,4,5}); // Initializing set using initializer list
@@ -113,7 +115,7 @@ void setOperations() {
 }
 
 // Function to demonstrate multiset operations
-void multisetOperations() {
+void multisetOperations() { //stores elements in sorted order and allows duplicates
     cout << "=== Multiset Operations ===" << endl;
 
     multiset<int> ms;
@@ -152,7 +154,76 @@ void multisetOperations() {
     ms.clear();
     cout << "Is the multiset empty? " << (ms.empty() ? "Yes" : "No") << endl;
 
+    // Erase elements from the multiset using iterators
+    ms.erase(ms.find(4), ms.end());
+
     cout << "==========================" << endl << endl;
+}
+
+void unorderedSetOperations() { //stores elements in unsorted order similar to hash table
+    cout << "=== Unordered Set Operations ===" << endl;
+
+    unordered_set<int> us;
+    us.insert(1);
+    us.insert(2);
+    us.insert(3);
+    us.insert(4);
+
+    // Display the maximum size of the unordered set
+    cout << "Max Size: " << us.max_size() << endl;
+
+    // Display all unordered set elements
+    cout << "Unordered Set elements are: ";
+    for (int i : us) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // Display the first element using the iterator
+    if (!us.empty()) {
+        cout << "First element: " << *us.begin() << endl;
+    }
+
+    // Remove an element from the unordered set
+    us.erase(3);
+    cout << "Unordered Set elements after erasing 3: ";
+    for (int i : us) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // Check if an element is present in the unordered set
+    cout << "Is 4 present in the unordered set? " << (us.find(4) != us.end() ? "Yes" : "No") << endl;
+
+    // Clear the unordered set
+    us.clear();
+    cout << "Is the unordered set empty? " << (us.empty() ? "Yes" : "No") << endl;
+
+    cout << "==============================" << endl << endl;
+}
+
+void mapOperations() { //map stores key-value pairs in sorted order
+    
+    map<int, string> m;
+    m[1] = "One";
+    m[2] = "Two";
+    m[3] = "Three";
+
+    // Display all map elements
+    cout << "Map elements are: ";
+    for (auto it = m.begin(); it != m.end(); it++) {
+        cout << it->first << " -> " << it->second << ", ";
+    }
+    cout << endl;
+
+    // Check if a key is present in the map
+    cout << "Is key 2 present in the map? " << (m.find(2) != m.end() ? "Yes" : "No") << endl;
+
+    // Remove an element from the map
+    m.erase(2);
+
+    // Check if a key is present in the map
+    cout << "Is key 2 present in the map? " << (m.find(2) != m.end() ? "Yes" : "No") << endl;
 }
 
 int main() {
@@ -168,6 +239,9 @@ int main() {
 
     // Demonstrate multiset operations
     multisetOperations();
+
+    // Demonstrate unordered set operations
+    unorderedSetOperations();
 
     return 0;
 }
