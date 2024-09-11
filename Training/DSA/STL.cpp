@@ -2,11 +2,13 @@
 #include <stack>
 #include <vector>
 #include <set>
-
+#include <string>
 using namespace std;
 
 // Function to demonstrate vector operations
 void vectorOperations() {
+    cout << "=== Vector Operations ===" << endl;
+
     vector<int> v({1, 2, 3, 4, 5}); // Initializing vector using initializer list
     v.push_back(6); // Adding an element using push_back method
 
@@ -42,10 +44,14 @@ void vectorOperations() {
     cout << "Is the vector empty? " << (v.empty() ? "Yes" : "No") << endl;
     cout << "Size of the vector is: " << v.size() << endl;
     cout << "Capacity of the vector is: " << v.capacity() << endl;
+
+    cout << "=========================" << endl << endl;
 }
 
 // Function to reverse a string using a stack
 void reverseStringUsingStack(const string& str) {
+    cout << "=== Reverse String Using Stack ===" << endl;
+
     stack<char> st;
 
     cout << "Original String: " << str << endl;
@@ -62,10 +68,14 @@ void reverseStringUsingStack(const string& str) {
         st.pop();
     }
     cout << endl;
+
+    cout << "==================================" << endl << endl;
 }
 
 // Function to demonstrate set operations
 void setOperations() {
+    cout << "=== Set Operations ===" << endl;
+
     set<int> s;
     s.insert(1);
     s.insert(2);
@@ -86,6 +96,36 @@ void setOperations() {
     if (!s.empty()) {
         cout << "First element: " << *s.begin() << endl;
     }
+
+    cout << "======================" << endl << endl;
+}
+
+// Function to demonstrate multiset operations
+void multisetOperations() {
+    cout << "=== Multiset Operations ===" << endl;
+
+    multiset<int> ms;
+    ms.insert(1);
+    ms.insert(2);
+    ms.insert(3);
+    ms.insert(4);
+
+    // Display the maximum size of the multiset
+    cout << "Max Size: " << ms.max_size() << endl;
+
+    // Display all multiset elements
+    cout << "Multiset elements are: ";
+    for (int i : ms) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // Display the first element using the iterator
+    if (!ms.empty()) {
+        cout << "First element: " << *ms.begin() << endl;
+    }
+
+    cout << "==========================" << endl << endl;
 }
 
 int main() {
@@ -99,10 +139,8 @@ int main() {
     // Demonstrate set operations
     setOperations();
 
+    // Demonstrate multiset operations
+    multisetOperations();
+
     return 0;
 }
-     
-    //  In the above code, we have demonstrated the following STL operations: 
-    //  Vector operations:  We have demonstrated various vector operations such as push_back, pop_back, back, empty, size, capacity, and clear. Reverse a string using a stack:  We have reversed a string using a stack. Set operations:  We have demonstrated set operations such as insert, max_size, empty, and begin. 
-    //  Output 
-    //  Size of the vector is: 6
