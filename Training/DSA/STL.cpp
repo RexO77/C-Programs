@@ -76,11 +76,8 @@ void reverseStringUsingStack(const string& str) {
 void setOperations() {
     cout << "=== Set Operations ===" << endl;
 
-    set<int> s;
-    s.insert(1);
-    s.insert(2);
-    s.insert(3);
-    s.insert(4);
+    set<int> s({1,2,3,4,5}); // Initializing set using initializer list
+    s.insert(6); // Adding an element using insert method
 
     // Display the maximum size of the set
     cout << "Max Size: " << s.max_size() << endl;
@@ -96,6 +93,21 @@ void setOperations() {
     if (!s.empty()) {
         cout << "First element: " << *s.begin() << endl;
     }
+
+    // Remove an element from the set
+    s.erase(3);
+    cout << "Set elements after erasing 3: ";
+    for (int i : s) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // Check if an element is present in the set
+    cout << "Is 4 present in the set? " << (s.find(4) != s.end() ? "Yes" : "No") << endl;
+
+    // Clear the set
+    s.clear();
+    cout << "Is the set empty? " << (s.empty() ? "Yes" : "No") << endl;
 
     cout << "======================" << endl << endl;
 }
@@ -124,6 +136,21 @@ void multisetOperations() {
     if (!ms.empty()) {
         cout << "First element: " << *ms.begin() << endl;
     }
+
+    // Remove an element from the multiset
+    ms.erase(3);
+    cout << "Multiset elements after erasing 3: ";
+    for (int i : ms) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // Check if an element is present in the multiset
+    cout << "Is 4 present in the multiset? " << (ms.find(4) != ms.end() ? "Yes" : "No") << endl;
+
+    // Clear the multiset
+    ms.clear();
+    cout << "Is the multiset empty? " << (ms.empty() ? "Yes" : "No") << endl;
 
     cout << "==========================" << endl << endl;
 }
