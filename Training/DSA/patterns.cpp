@@ -130,10 +130,22 @@ void p11(int n){//left Arrow without combining 2 triangle
         }cout<<endl;
     }
 }
-void p12(int n){
-    
+void p12(int n){ //0 1 pattern
+    for(int i=0; i<n;i++){
+        int start =1;
+        if(i%2==0) start = 0;
+        else start = 1;
+        for(int j=0;j<=i;j++){
+            cout<<start<<" "; //1
+            start = 1-start; //0
+        }
+        cout<<endl;
+    }
+}
+void p13(int n){
+
 }
 int main(){
-    p11(5);
+    p12(5);
     return 0;
 }
