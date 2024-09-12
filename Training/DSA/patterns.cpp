@@ -171,7 +171,47 @@ void p14(int n){
         }cout<<endl;
     }
 }
+void p15(int n){
+    for(int i =0;i<n;i++){
+        for(char ch = 'A';ch<= 'A'+i;ch++){
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+    }
+}
+void p16(int n){
+    for(int i=1;i<=n;i++){
+        for(char ch = 'A';ch<='A'+(n-i);ch++){
+            cout<<ch<<" ";
+        }cout<<endl;
+    }
+}
+void p17(int n){
+    for(int i=0;i<n;i++){
+        char ch = 'A'+i;
+        for(int j =0;j<=i;j++){
+            cout<<ch<<" ";
+        }cout<<endl;
+    }
+}
+void p18(int n){
+    for(int i=0;i<n;i++){
+        //spaces
+        for(int j=0 ;j<=n-i-1;j++){
+            cout<<" ";
+        }
+        //abphabits
+        char ch = 'A';
+        for(int j=1;j<=2*(i+1);j++){
+            cout<<ch<<" ";
+        }
+        //spaces
+        for(int j=0 ;j<=n-i-1;j++){
+            cout<<" ";
+        }cout<<endl;
+    }
+}
 int main(){
-    p14(6);
+    p18(4);
     return 0;
 }
