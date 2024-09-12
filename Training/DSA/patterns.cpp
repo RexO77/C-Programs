@@ -130,7 +130,7 @@ void p11(int n){//left Arrow without combining 2 triangle
         }cout<<endl;
     }
 }
-void p12(int n){ //0 1 pattern
+void p12(int n){//0 1 pattern
     for(int i=0; i<n;i++){
         int start =1;
         if(i%2==0) start = 0;
@@ -142,7 +142,7 @@ void p12(int n){ //0 1 pattern
         cout<<endl;
     }
 }
-void p13(int n) {
+void p13(int n){ 
     int space = 2 * (n - 1); // Initialize space once before the loop
 
     for (int i = 1; i <= n; i++) {
@@ -162,8 +162,16 @@ void p13(int n) {
         space -= 2; // Decrement space inside the loop
     }
 }
-
+void p14(int n){
+    int num =1;
+    for(int i=0; i<n; i++){
+        for(int j=1 ; j<=i ; j++){
+            cout<<num<<" ";
+            num +=1;
+        }cout<<endl;
+    }
+}
 int main(){
-    p13(5);
+    p14(6);
     return 0;
 }
