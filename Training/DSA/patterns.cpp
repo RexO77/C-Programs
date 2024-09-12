@@ -142,9 +142,6 @@ void p12(int n){ //0 1 pattern
         cout<<endl;
     }
 }
-#include <iostream>
-using namespace std;
-
 void p13(int n) {
     int space = 2 * (n - 1); // Initialize space once before the loop
 
