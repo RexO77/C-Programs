@@ -142,10 +142,31 @@ void p12(int n){ //0 1 pattern
         cout<<endl;
     }
 }
-void p13(int n){
+#include <iostream>
+using namespace std;
 
+void p13(int n) {
+    int space = 2 * (n - 1); // Initialize space once before the loop
+
+    for (int i = 1; i <= n; i++) {
+        // Numbers increasing
+        for (int j = 1; j <= i; j++) {
+            cout << j;
+        }
+        // Spaces
+        for (int j = 1; j <= space; j++) {
+            cout << " ";
+        }
+        // Numbers decreasing
+        for (int j = i; j >= 1; j--) {
+            cout << j;
+        }
+        cout << endl;
+        space -= 2; // Decrement space inside the loop
+    }
 }
+
 int main(){
-    p12(5);
+    p13(5);
     return 0;
 }
