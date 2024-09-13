@@ -194,24 +194,29 @@ void p17(int n){
         }cout<<endl;
     }
 }
-void p18(int n){
-    for(int i=0;i<n;i++){
-        //spaces
-        for(int j=0 ;j<=n-i-1;j++){
-            cout<<" ";
-        }
-        //abphabits
+void p18(int n) {
+    // Outer loop to handle the number of rows
+    for (int i = 0; i < n; i++) {
+        // Inner loop to handle the spaces before the characters
+        for (int j = 0; j < n - i - 1; j++) cout << " "; // Print space
+        // Initialize the starting character
         char ch = 'A';
-        for(int j=1;j<=2*(i+1);j++){
-            cout<<ch<<" ";
-        }
-        //spaces
-        for(int j=0 ;j<=n-i-1;j++){
-            cout<<" ";
-        }cout<<endl;
+        // Calculate the breakpoint where the character should start decrementing
+        int bp = (2 * i + 1) / 2;
+        // Inner loop to handle the characters in each row
+        for (int j = 0; j <= 2 * i; j++) {
+            cout << ch; // Print the character
+            if (j < bp) ch++; // Increment the character until the breakpoint
+            else ch--; // Decrement the character after the breakpoint
+        }cout << endl;
     }
 }
-int main(){
-    p18(4);
+void p19(int n){
+    for(int i =0;i<n;i++){
+        
+    }
+}
+int main() {
+    p18(5); 
     return 0;
 }
