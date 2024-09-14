@@ -212,9 +212,7 @@ void p18(int n) {
     }
 }
 void p19(int n){
-    for(int i =0;i<n;i++){
-        cout<<endl;//daily commit
-    }
+    
 }
 int main() {
     p18(5); 
