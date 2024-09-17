@@ -212,8 +212,7 @@ void p18(int n) {
     }
 }
 void p19(int n){
-    //sunday funday commit
-    //DSA
+    
 }
 int main() {
     p18(5); 
