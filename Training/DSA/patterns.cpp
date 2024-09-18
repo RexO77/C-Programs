@@ -211,7 +211,9 @@ void p18(int n) {
         }cout << endl;
     }
 }
-
+void p19(int n){
+    
+}
 int main() {
     p18(5); 
     return 0;
