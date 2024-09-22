@@ -213,7 +213,6 @@ void p18(int n) {
 }
 void p19(int n){
     //all patters in the end
-    //lol
 }
 int main() {
     p18(5); 
