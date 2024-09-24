@@ -194,7 +194,7 @@ void p17(int n){
         }cout<<endl;
     }
 }
-void p18(int n) {
+void p18(int n){
     // Outer loop to handle the number of rows
     for (int i = 0; i < n; i++) {
         // Inner loop to handle the spaces before the characters
@@ -212,7 +212,7 @@ void p18(int n) {
     }
 }
 void p19(int n){
-    //all patters in the end
+    
 }
 int main() {
     p18(5); 
