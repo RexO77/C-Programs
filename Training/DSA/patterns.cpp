@@ -212,7 +212,7 @@ void p18(int n){
     }
 }
 void p19(int n){
-   //start watching again  
+   //start watching again your slacking too much 
 }
 int main() {
     p18(5); 
