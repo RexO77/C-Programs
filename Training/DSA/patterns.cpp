@@ -212,7 +212,7 @@ void p18(int n){
     }
 }
 void p19(int n){
-   //pointers
+   //pointers 18
 }
 int main() {
     p18(5); 
