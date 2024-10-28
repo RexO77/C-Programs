@@ -212,7 +212,7 @@ void p18(int n){
     }
 }
 void p19(int n){
-   //this is a simple co
+   //this is a simple comment
 }
 int main() {
     p18(5); 
