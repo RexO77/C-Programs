@@ -212,7 +212,7 @@ void p18(int n){
     }
 }
 void p19(int n){
-   //shouldI cmmit
+   //standard commit
 }
 int main() {
     p18(5); 
