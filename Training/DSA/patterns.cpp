@@ -214,7 +214,34 @@ void p18(int n){
 void p19(int n){
    //standard commit
 }
+void p20(int n) {
+    // Upper part of the diamond
+    for (int i = 0; i < n; i++) {
+        // Spaces
+        for (int j = 0; j < n - i - 1; j++) {
+            cout << " ";
+        }
+        // Stars
+        for (int j = 0; j < 2 * i + 1; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    // Lower part of the diamond
+    for (int i = n - 2; i >= 0; i--) {
+        // Spaces
+        for (int j = 0; j < n - i - 1; j++) {
+            cout << " ";
+        }
+        // Stars
+        for (int j = 0; j < 2 * i + 1; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
 int main() {
-    p18(5); 
+    p20(5); 
     return 0;
 }
